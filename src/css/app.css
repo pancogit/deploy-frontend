@@ -1,0 +1,86 @@
+body {
+    background-color: #131822;
+    color: white;
+    text-align: center;
+}
+
+.title {
+    color: #e79a0d;
+}
+
+.menu {
+    display: flex;
+    padding: 0;
+    margin-top: 3rem;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+    background-color: #262626;
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+}
+
+.menu-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    border-radius: 0.5rem;
+    text-decoration: none;
+}
+
+.menu-link:hover {
+    background-color: white;
+    color: black;
+}
+
+.menu-item {
+    display: flex;
+}
+
+.todo-label {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+.todo-input {
+    padding: 0.5rem 0.8rem;
+    border-radius: 0.5rem;
+    border-style: none;
+    outline: none;
+}
+
+.todo-input::placeholder {
+    font-style: italic;
+}
+
+.todo-input:focus {
+    box-shadow: 0px 0px 1px 3px #ab7109;
+}
+
+.todo-button {
+    margin-top: 0.5rem;
+    padding: 0.5rem 2.5rem;
+    background-color: #3d6527;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 0.8rem;
+}
+
+.todo-button:hover {
+    background-color: #2c4a1b;
+}
+
+.todo-list {
+    padding: 0;
+    list-style: none;
+}
+
+.todo-item {
+    margin-bottom: 0.5rem;
+    color: #d1ba91;
+}
