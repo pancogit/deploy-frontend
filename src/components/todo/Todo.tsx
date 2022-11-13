@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
+import { serverOrigin } from "../../configs/configs";
 import Menu from "../menu/Menu";
 
 interface TodoType {
@@ -14,7 +15,7 @@ interface SingleTodoResponse {
 }
 
 export default function Todo() {
-    const { current: serverAddress } = useRef("http://0.0.0.0:4000");
+    const { current: serverAddress } = useRef(serverOrigin);
     const [todoList, setTodoList] = useState<TodoType[]>([]);
     const fetchTodos = useRef(false);
     const [inputValue, setInputValue] = useState("");
