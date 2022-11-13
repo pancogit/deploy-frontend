@@ -9,7 +9,7 @@ const serverConfigurations: ServerConfig = {
     serverPort: 4000,
     serverLocalAddress: "localhost",
     serverRemoteAddress: "0.0.0.0",
-    useServerRemoteAddress: false,
+    useServerRemoteAddress: true,
 };
 
 const serverAddress =
