@@ -5,10 +5,17 @@ interface ServerConfig {
     useServerRemoteAddress: boolean;
 }
 
+// when server is deployed, then it's always use HTTPS 443 predefined port
+// there are cases when HTTP 80 port can be used for secured HTTPS 443
+// transfer when port 443 is not available
+// other ports than HTTPS 443 will not work on production site or app
 const serverConfigurations: ServerConfig = {
-    serverPort: 4000,
+    serverPort: 443,
     serverLocalAddress: "localhost",
     serverRemoteAddress: "0.0.0.0",
+
+    // use true - online development (when deployed)d
+    // use false - local development (when debugging)
     useServerRemoteAddress: true,
 };
 
