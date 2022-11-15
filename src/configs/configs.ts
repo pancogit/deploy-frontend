@@ -10,13 +10,17 @@ interface ServerConfig {
 // transfer when port 443 is not available
 // other ports than HTTPS 443 will not work on production site or app
 const serverConfigurations: ServerConfig = {
-    serverPort: 443,
-    serverLocalAddress: "localhost",
-    serverRemoteAddress: "0.0.0.0",
+    serverPort: Number(process.env.REACT_APP_SERVER_PORT),
 
-    // use true - online development (when deployed)d
+    serverLocalAddress:
+        process.env.REACT_APP_SERVER_LOCAL_ADDRESS || "localhost",
+
+    serverRemoteAddress: process.env.REACT_APP_SERVER_REMOTE_ADDRESS || "",
+
+    // use true - online development (when deployed)
     // use false - local development (when debugging)
-    useServerRemoteAddress: true,
+    useServerRemoteAddress:
+        process.env.REACT_APP_USE_SERVER_REMOTE_ADDRESS === "true",
 };
 
 const serverAddress =
