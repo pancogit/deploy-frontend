@@ -26,7 +26,7 @@ Copy _.env.format_ file to two files: _.env.development_ (development configurat
 
 For development configuration use environment variables REACT_APP_SERVER_PORT=4000, REACT_APP_SERVER_ADDRESS=http://localhost . For development mode local nodejs express server is running for serving react application on local machine. [Backend server](https://github.com/pancogit/deploy-backend) is handling react frontend requests.
 
-For production configuration use environment variables REACT_APP_SERVER_ADDRESS=https://deploy-backend-<CUSTOM_ID>.onrender.com. For production mode backend api address is used for server application.
+For production configuration use environment variables REACT_APP_SERVER_ADDRESS=[https://deploy-backend-<CUSTOM_ID>.onrender.com](https://deploy-backend-<CUSTOM_ID>.onrender.com) . For production mode backend api address is used for server application.
 
 ### Local app running
 
